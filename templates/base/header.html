@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 50,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+
+<div id="wrapper">
+    <header>
+        <div class="container clearfix">
+            <h1 id="logo">
+{#                Імперія&nbspдаху#}
+                <a href="/"><img src="{% static 'media/site/last_logo.jpg' %}" class="about-photo"></a>
+            </h1>
+            <nav>
+                <a href="{% url 'application:products' %}">Товари і послуги</a>
+                <a href="{% url 'application:about' %}">Про нас</a>
+                <a href="{% url 'application:contact' %}">Контакти</a>
+            </nav>
+        </div>
+    </header>
+</div>

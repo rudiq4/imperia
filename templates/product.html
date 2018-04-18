@@ -1,0 +1,24 @@
+{% extends 'base/basic.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container product-window">
+        <div class="row">
+            <div class="col-lg-6">
+                    <img src="{{ product.image.url }}">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="product-name">
+                    {{ product.name }}
+                </h1><hr>
+                <div class="product-desc">
+                    <pre>{{ product.description }}</pre>
+                </div>
+                <div class="product-price">
+                    Ціна <span>{{ product.price }}</span> грн/м2
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

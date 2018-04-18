@@ -1,0 +1,25 @@
+{% extends 'base/basic.html'%}
+
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="col-lg-10 col-lg-offset-1 prodlist">
+        <div class="row">
+            {% for item in query_tile %}
+                <div class="col-lg-4">
+                    <div class="thumbnail">
+                        <a href="{% url 'application:product' item.id %}">
+                            <img src="{{ item.image.url }}">
+                        </a>
+                        <div class="caption">
+                            <p>{{ item.name }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

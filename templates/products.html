@@ -1,0 +1,59 @@
+{% extends 'base/basic.html'%}
+
+{% load static %}
+{% block content %}
+
+<div class="container contact">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="row">
+            <h2 class="text-center news">Наша продукція</h2>
+                <div class="col-sm-4 col-lg-6 col-md-4">
+                    <div class="thumbnail">
+                        <a href="{% url 'application:tile' %}"><img src="{% static 'media/site/cherep.jpg' %}" alt="Металочерепиця"></a>
+                            <hr>
+                        <div class="caption">
+                            <p class="products-p">Металочерепиця</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-6 col-md-4">
+                    <div class="thumbnail">
+                        <a href="{% url 'application:board' %}"><img src="{% static 'media/site/profil.jpg' %}" alt="Профнастил"></a>
+                            <hr>
+                        <div class="caption">
+                            <p class="products-p">Профнастил</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-6 col-md-4">
+                    <div class="thumbnail">
+                        <a href="{% url 'application:accessories' %}"><img src="{% static 'media/site/akses.jpg' %}" alt="Аксесуари"></a>
+                            <hr>
+                        <div class="caption">
+                            <p class="products-p">Аксесуари</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-6 col-md-4">
+                    <div class="thumbnail">
+                        <a href="{% url 'application:drainage' %}"><img src="{% static 'media/site/system.jpg' %}" alt="Водостічні системи"></a>
+                            <hr>
+                        <div class="caption">
+                            <p class="products-p">Водостічні системи</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-6 col-md-4">
+                    <div class="thumbnail">
+                        <a href="{% url 'application:rollout' %}"><img src="{% static 'media/site/rulon.jpg' %}" alt="Розпуск рулонів"></a>
+                            <hr>
+                        <div class="caption">
+                            <p class="products-p">Розпуск рулонів</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

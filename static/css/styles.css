@@ -1,0 +1,228 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+
+header {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 10px 17px 30px -10px #e3e3e3;
+  /*background-color: #00923f;*/
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
+  header h1#logo {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav a {
+      line-height: 100px;
+      margin-left: 20px;
+      /*color: #b4fcd4;*/
+      color : #00923f;
+      font-weight: 700;
+      font-size: 18px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      header nav a:hover {
+        color: white; }
+  header.smaller {
+    height: 50px; }
+    header.smaller h1#logo {
+      width: 50px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 25px;
+      padding-bottom: 50px}
+    header.smaller nav a {
+      line-height: 50px; }
+
+/* =Footer
+-------------------------------------------------------------- */
+/* =Extras
+-------------------------------------------------------------- */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 660px) {
+  /* =Header
+  -------------------------------------------------------------- */
+  header h1#logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+    text-align: center; }
+  header nav {
+    display: block;
+    float: none;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto; }
+    header nav a {
+      line-height: 500px;
+      margin: 0 10px; }
+  header.smaller {
+    height: 100px; }
+    header.smaller h1#logo {
+      height: 15px;
+      line-height: 15px;
+      font-size: 20px; }
+    header.smaller nav {
+      height: 15px; }
+      header.smaller nav a {
+        line-height: 15px; } }
+@media all and (max-width: 600px) {
+  .container {
+    width: 100%; }
+ }
+
+footer{
+   background-color: #00923f;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    text-align: center;
+    color: #CCC;
+    margin-top: 35px;
+}
+
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+}
+
+.about {
+  padding: 50px;
+  margin-top: 110px;
+  font-size: medium;
+  font-family: 'Comfortaa', cursive;
+}
+
+.about-photo {
+  height: 80%;
+}
+
+.contact {
+  margin-top: 150px;
+  font-size: medium;
+  font-family: 'Comfortaa', cursive;
+}
+
+.map-responsive{
+    margin-bottom: 35px;
+    border: 3px solid #00923f;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.main {
+  margin-top: 180px;
+  font-size: small;
+  font-family: 'Comfortaa', cursive;
+}
+
+.caption {
+  height: inherit;
+}
+
+.main-info {
+  font-size: medium;
+  margin-bottom: 100px;
+}
+
+.main-picture {
+  width: 100%;
+  border: 3px solid #00923f;
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.products-p {
+  text-align: center;
+  font-size: larger;
+  font-family: 'Comfortaa', cursive;
+}
+
+.prodlist {
+  margin-top: 180px;
+}
+
+.product-window {
+  margin-top: 180px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.product-price {
+  border: 3px solid #00923f;
+  border-radius: 10px;
+  margin-top: 35px;
+  font-size: x-large;
+  text-align: center;
+}
+
+.product-price span {
+  color: #00923f;
+}
+
+
+
+
+
