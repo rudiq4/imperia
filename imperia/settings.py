@@ -6,7 +6,9 @@ SECRET_KEY = '30q%*s&s^x&q*(qh(8-yb*r0md3n9f*b#fqej9e_3)==^u+yw7'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'rudiq4.pythonanywhere.com'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -92,16 +94,7 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
 
-# Настройки Heroku
-if os.getcwd() == '/app':
-    import dj_database_url
-    DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost')
-    }
-    # Поддержка заголовка 'X-Forwarded-Proto' для request.is_secure().
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    # Разрешены все заголовки хостов.
-    ALLOWED_HOSTS = ['*']
+
 
 
 
