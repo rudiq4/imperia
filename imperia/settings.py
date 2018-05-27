@@ -7,7 +7,8 @@ SECRET_KEY = '30q%*s&s^x&q*(qh(8-yb*r0md3n9f*b#fqej9e_3)==^u+yw7'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'rudiq4.pythonanywhere.com'
+    'rudiq4.pythonanywhere.com',
+    '127.0.0.1'
 ]
 
 INSTALLED_APPS = [
