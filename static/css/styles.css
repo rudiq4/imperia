@@ -180,6 +180,7 @@ footer p {
 
 .caption {
   height: inherit;
+  text-align: center;
 }
 
 .main-info {
